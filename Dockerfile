@@ -11,6 +11,10 @@ RUN yum -y update && \
     yum install -y postgresql14 && \
     yum install -y epel-release && \
     yum install -y dejavu-sans-fonts dejavu-serif-fonts dejavu-fonts-common dejavu-sans-mono-fonts && \
+    yum install -y liberation-serif-fonts liberation-sans-fonts liberation-fonts liberation-fonts-common \
+    liberation-narrow-fonts liberation-mono-fonts dejavu-lgc-serif-fonts dejavu-serif-fonts dejavu-fonts-common \
+    dejavu-lgc-sans-mono-fonts dejavu-sans-fonts dejavu-sans-mono-fonts gnu-free-fonts-common gnu-free-serif-fonts \
+    gnu-free-sans-fonts gnu-free-serif-fonts && \
     yum install -y fontconfig && \
     yum -y clean all && \
     yum -y autoremove
